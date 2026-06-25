@@ -7,7 +7,9 @@ Reference implementation and full reproduction code for
 
 > **Calibrated Inference for the Conditional Average Treatment Effect in
 > the Few-Placebo Regime via Gaussian Processes**
-> Eichi Uehara (AFLO). [[paper PDF](docs/paper.pdf)]
+> Eichi Uehara (AFLO).
+> [**arXiv:2605.27473**](https://arxiv.org/abs/2605.27473) ·
+> [local PDF](docs/paper.pdf)
 
 **GP-CATE** estimates the conditional average treatment effect (CATE)
 `tau(x) = E[Y(1) - Y(0) | X = x]` **with calibrated credible intervals**
@@ -162,10 +164,13 @@ If you use this code, please cite the paper (see [CITATION.cff](CITATION.cff)):
 
 ```bibtex
 @article{uehara2026gpcate,
-  title   = {Calibrated Inference for the Conditional Average Treatment
-             Effect in the Few-Placebo Regime via Gaussian Processes},
-  author  = {Uehara, Eichi},
-  year    = {2026}
+  title         = {Calibrated Inference for the Conditional Average Treatment
+                   Effect in the Few-Placebo Regime via Gaussian Processes},
+  author        = {Uehara, Eichi},
+  year          = {2026},
+  eprint        = {2605.27473},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2605.27473}
 }
 ```
 

@@ -9,6 +9,11 @@ authors:
 version: 1.0.0
 license: MIT
 repository-code: "https://github.com/EichiUehara/GP-CATE"
+url: "https://arxiv.org/abs/2605.27473"
+identifiers:
+  - type: other
+    value: "arXiv:2605.27473"
+    description: arXiv preprint
 abstract: >-
   Reference implementation of GP-CATE, a Bayesian T-learner with
   Gaussian-process arms that attains calibrated coverage for the
@@ -28,3 +33,9 @@ preferred-citation:
       given-names: Eichi
       affiliation: AFLO
   year: 2026
+  journal: "arXiv preprint arXiv:2605.27473"
+  url: "https://arxiv.org/abs/2605.27473"
+  identifiers:
+    - type: other
+      value: "arXiv:2605.27473"
+      description: arXiv preprint
