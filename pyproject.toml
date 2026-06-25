@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpcate"
+version = "1.0.0"
+description = "GP-CATE: calibrated CATE inference in the few-placebo regime via Gaussian processes."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Eichi Uehara", email = "eichi.uehara@aflo.one" }]
+keywords = [
+    "causal-inference",
+    "treatment-effects",
+    "conditional-average-treatment-effect",
+    "gaussian-process",
+    "uncertainty-quantification",
+    "calibration",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "pandas",
+]
+
+[project.optional-dependencies]
+# Interval baselines (Causal Forest, BART) reproduced in Tables 3-5.
+# Heavy; only needed to re-run the baseline comparisons.
+baselines = ["econml>=0.15", "bartz>=0.9"]
+test = ["pytest"]
+all = ["gpcate[baselines,test]"]
+
+[project.urls]
+Repository = "https://github.com/EichiUehara/GP-CATE"
+
+[tool.setuptools.packages.find]
+include = ["gpcate*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

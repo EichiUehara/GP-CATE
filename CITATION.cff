@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "GP-CATE: Calibrated Inference for the Conditional Average Treatment Effect in the Few-Placebo Regime via Gaussian Processes"
+authors:
+  - family-names: Uehara
+    given-names: Eichi
+    affiliation: AFLO
+    email: eichi.uehara@aflo.one
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/EichiUehara/GP-CATE"
+abstract: >-
+  Reference implementation of GP-CATE, a Bayesian T-learner with
+  Gaussian-process arms that attains calibrated coverage for the
+  conditional average treatment effect in the few-placebo regime, where
+  one treatment arm is much smaller than the other. The repository
+  reproduces the paper's diagnosis (the Bayesian X-Learner under-covers
+  from first-order nuisance bias), its negative result (the
+  doubly-robust score does not repair this under poor overlap, even with
+  the propensity known), the GP-CATE method, and the empirical
+  comparison against Causal Forest and BART on linear, non-linear, and
+  IHDP designs.
+preferred-citation:
+  type: article
+  title: "Calibrated Inference for the Conditional Average Treatment Effect in the Few-Placebo Regime via Gaussian Processes"
+  authors:
+    - family-names: Uehara
+      given-names: Eichi
+      affiliation: AFLO
+  year: 2026

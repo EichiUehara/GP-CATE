@@ -1,0 +1,12 @@
+# Core dependencies for GP-CATE and the diagnosis / negative-result
+# experiments (Tables 1, 2, 5-PEHE-metalearners, and the GP-CATE rows).
+numpy
+scipy
+scikit-learn
+pandas
+
+# Interval baselines for Tables 3-5 (Causal Forest, BART). Heavy
+# (econml pulls in a full sklearn/Cython stack; bartz pulls in JAX).
+# Install only if you want to re-run the baseline comparisons.
+econml>=0.15
+bartz>=0.9
